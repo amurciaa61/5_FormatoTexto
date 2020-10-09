@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_5_FormatoTexto"
         mc:Ignorable="d"
-        Title="MainWindow"
+        Title="Texto con formato"
         Height="420"
         Width="800">
     <Grid>
