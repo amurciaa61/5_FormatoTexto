@@ -26,6 +26,16 @@
                  Width="199"
                  TextChanged="textoInputTextBox_TextChanged"
                  FontSize="16" />
+        <TextBlock x:Name="textoOutputTextBlock"
+                   HorizontalAlignment="Left"
+                   Margin="57,295,0,48.4"
+                   TextWrapping="NoWrap"
+                   TextTrimming="CharacterEllipsis"
+                   TextAlignment="Center"
+                   Background="#FFEAF1AD"
+                   Width="694"
+                   FontSize="26"
+                   Height="47" />
         <CheckBox x:Name="negritaCheckBox"
                   Content="Negrita"
                   HorizontalAlignment="Left"
@@ -68,8 +78,8 @@
                      Width="80"
                      Height="21"
                      IsChecked="True"
-                     Checked="RadioButton_Checked" 
-                     VerticalContentAlignment="Center"/>
+                     Checked="RadioButton_Checked"
+                     VerticalContentAlignment="Center" />
         <RadioButton x:Name="rojoRadioButton"
                      Content="Rojo"
                      HorizontalAlignment="Left"
@@ -77,8 +87,9 @@
                      VerticalAlignment="Top"
                      FontSize="16"
                      Width="80"
-                     Height="21" 
-                     VerticalContentAlignment="Center"/>
+                     Height="21"
+                     VerticalContentAlignment="Center"
+                     Checked="RadioButton_Checked" />
         <RadioButton x:Name="verdeRadioButton"
                      Content="Verde"
                      HorizontalAlignment="Left"
@@ -87,18 +98,7 @@
                      FontSize="16"
                      Width="80"
                      Height="21"
-                     VerticalContentAlignment="Center"/>
-        <TextBlock x:Name="textoOutputTextBlock"
-                   HorizontalAlignment="Left"
-                   Margin="57,224,0,0"
-                   TextWrapping="NoWrap"
-                   TextTrimming="CharacterEllipsis"
-                   TextAlignment="Center"
-                   VerticalAlignment="Top"
-                   Background="#FFEAF1AD"
-                   Height="51"
-                   Width="694"
-                   FontSize="20" />
-
+                     VerticalContentAlignment="Center"
+                     Checked="RadioButton_Checked" />
     </Grid>
 </Window>

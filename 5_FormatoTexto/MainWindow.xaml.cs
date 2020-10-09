@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace _5_FormatoTexto
 {
@@ -32,22 +33,20 @@ namespace _5_FormatoTexto
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
             RadioButton rb = sender as RadioButton;
-
-
-            //switch (rb.Name)
-            //{
-            //    case "azulRadioButton":
-            //        textoOutputTextBlock.Foreground = Brushes.Red;
-            //        break;
-            //    case "rojoRadioButton":
-            //        textoOutputTextBlock.Foreground = Brushes.Red;
-            //        break;
-            //    case "verdeRadioButton":
-            //        textoOutputTextBlock.Foreground = Brushes.Green;
-            //        break;
-            //    default:
-            //        break;
-            //}
+            switch (rb.Name)
+            {
+                case "azulRadioButton":
+                    textoOutputTextBlock.Foreground = Brushes.Blue;
+                    break;
+                case "rojoRadioButton":
+                    textoOutputTextBlock.Foreground = Brushes.Red;
+                    break;
+                case "verdeRadioButton":
+                    textoOutputTextBlock.Foreground = Brushes.Green;
+                    break;
+                default:
+                    break;
+            }
 
         }
 
