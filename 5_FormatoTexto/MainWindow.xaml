@@ -35,6 +35,7 @@
                   Width="90"
                   FontWeight="Bold"
                   FontSize="16"
+                  VerticalContentAlignment="center"
                   Checked="negritaCheckBox_Checked"
                   Unchecked="negritaCheckBox_Unchecked" />
         <CheckBox x:Name="cursivaCheckBox"
@@ -46,6 +47,7 @@
                   Width="90"
                   FontSize="16"
                   FontStyle="Italic"
+                  VerticalContentAlignment="Center"
                   Checked="cursivaCheckBox_Checked"
                   Unchecked="cursivaCheckBox_Unchecked" />
         <TextBlock HorizontalAlignment="Left"
@@ -66,7 +68,8 @@
                      Width="80"
                      Height="21"
                      IsChecked="True"
-                     Checked="RadioButton_Checked" />
+                     Checked="RadioButton_Checked" 
+                     VerticalContentAlignment="Center"/>
         <RadioButton x:Name="rojoRadioButton"
                      Content="Rojo"
                      HorizontalAlignment="Left"
@@ -74,14 +77,17 @@
                      VerticalAlignment="Top"
                      FontSize="16"
                      Width="80"
-                     Height="21" />
+                     Height="21" 
+                     VerticalContentAlignment="Center"/>
         <RadioButton x:Name="verdeRadioButton"
                      Content="Verde"
                      HorizontalAlignment="Left"
                      Margin="671,102,0,0"
                      VerticalAlignment="Top"
                      FontSize="16"
-                     Width="80" />
+                     Width="80"
+                     Height="21"
+                     VerticalContentAlignment="Center"/>
         <TextBlock x:Name="textoOutputTextBlock"
                    HorizontalAlignment="Left"
                    Margin="57,224,0,0"

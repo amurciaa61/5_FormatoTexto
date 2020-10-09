@@ -1,7 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 
-
 namespace _5_FormatoTexto
 {
     /// <summary>
@@ -32,8 +31,9 @@ namespace _5_FormatoTexto
 
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
-            RadioButton rb = (RadioButton)sender;
-            
+            RadioButton rb = sender as RadioButton;
+
+
             //switch (rb.Name)
             //{
             //    case "azulRadioButton":
