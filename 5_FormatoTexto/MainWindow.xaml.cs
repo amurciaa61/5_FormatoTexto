@@ -12,6 +12,7 @@ namespace _5_FormatoTexto
         public MainWindow()
         {
             InitializeComponent();
+            azulRadioButton.IsChecked = true;
         }
 
         private void negritaCheckBox_Checked(object sender, RoutedEventArgs e)
@@ -32,22 +33,8 @@ namespace _5_FormatoTexto
 
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
-            RadioButton rb = sender as RadioButton;
-            switch (rb.Name)
-            {
-                case "azulRadioButton":
-                    textoOutputTextBlock.Foreground = Brushes.Blue;
-                    break;
-                case "rojoRadioButton":
-                    textoOutputTextBlock.Foreground = Brushes.Red;
-                    break;
-                case "verdeRadioButton":
-                    textoOutputTextBlock.Foreground = Brushes.Green;
-                    break;
-                default:
-                    break;
-            }
-
+            string col = (sender as RadioButton).Tag.ToString();
+            textoOutputTextBlock.Foreground = (Brush)new BrushConverter().ConvertFromString(col);
         }
 
         private void cursivaCheckBox_Checked(object sender, RoutedEventArgs e)

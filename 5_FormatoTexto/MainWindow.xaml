@@ -7,7 +7,8 @@
         mc:Ignorable="d"
         Title="Texto con formato"
         Height="420"
-        Width="800">
+        Width="800"
+        Icon="/imagenes/edit.ico">
     <Grid>
         <TextBlock HorizontalAlignment="Left"
                    Margin="57,45,0,0"
@@ -70,16 +71,16 @@
                    RenderTransformOrigin="0.447,0.106"
                    FontSize="16" />
         <RadioButton x:Name="azulRadioButton"
-                     Content="Azul"
+                     Content="azul"
                      HorizontalAlignment="Left"
                      Margin="671,37,0,0"
                      VerticalAlignment="Top"
                      FontSize="16"
                      Width="80"
                      Height="21"
-                     IsChecked="True"
                      Checked="RadioButton_Checked"
-                     VerticalContentAlignment="Center" />
+                     VerticalContentAlignment="Center"
+                     Tag="#00f" />
         <RadioButton x:Name="rojoRadioButton"
                      Content="Rojo"
                      HorizontalAlignment="Left"
@@ -89,7 +90,8 @@
                      Width="80"
                      Height="21"
                      VerticalContentAlignment="Center"
-                     Checked="RadioButton_Checked" />
+                     Checked="RadioButton_Checked"
+                     Tag="#f00" />
         <RadioButton x:Name="verdeRadioButton"
                      Content="Verde"
                      HorizontalAlignment="Left"
@@ -99,6 +101,7 @@
                      Width="80"
                      Height="21"
                      VerticalContentAlignment="Center"
-                     Checked="RadioButton_Checked" />
+                     Checked="RadioButton_Checked"
+                     Tag="#0f0" />
     </Grid>
 </Window>
