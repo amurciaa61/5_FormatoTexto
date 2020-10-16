@@ -8,7 +8,7 @@
         Title="Texto con formato"
         Height="420"
         Width="800"
-        Icon="/imagenes/edit.ico">
+        Icon="imagenes/edit.ico">
     <Grid>
         <TextBlock HorizontalAlignment="Left"
                    Margin="57,45,0,0"
